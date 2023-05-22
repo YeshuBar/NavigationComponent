@@ -5,17 +5,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
+import com.example.navigationcomponent.databinding.FragmentOneBinding
 import com.example.navigationcomponent.databinding.FragmentTwoBinding
 
 class FragmentTwo : Fragment() {
-    private var _binding: FragmentTwoBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentTwoBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentTwoBinding.inflate(inflater, container, false)
+        binding = FragmentTwoBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -23,16 +23,12 @@ class FragmentTwo : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonToFragmentFour.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_fragmentTwo_to_fragmentFour)
+            Navigation.findNavController(view).navigate(R.id.action_fragment_two_to_fragment_four)
         }
 
         binding.buttonToFragmentOne.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_fragmentTwo_to_fragmentOne)
+            Navigation.findNavController(view).navigate(R.id.action_fragment_two_to_fragment_one)
         }
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
-    }
 }

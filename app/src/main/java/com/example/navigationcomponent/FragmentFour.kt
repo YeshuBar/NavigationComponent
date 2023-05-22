@@ -9,14 +9,13 @@ import androidx.navigation.Navigation
 import com.example.navigationcomponent.databinding.FragmentFourBinding
 
 class FragmentFour : Fragment() {
-    private var _binding: FragmentFourBinding? = null
-    private val binding get() = _binding!!
+    private lateinit var binding: FragmentFourBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentFourBinding.inflate(inflater, container, false)
+        binding = FragmentFourBinding.inflate(inflater, container, false)
         return binding.root
     }
 
@@ -24,12 +23,7 @@ class FragmentFour : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonToFragmentOne.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_fragmentFour_to_fragmentOne)
+            Navigation.findNavController(view).navigate(R.id.action_fragment_four_to_fragment_one)
         }
-    }
-
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
     }
 }

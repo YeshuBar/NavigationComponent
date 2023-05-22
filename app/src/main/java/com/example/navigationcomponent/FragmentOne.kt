@@ -23,12 +23,12 @@ class FragmentOne : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonToFragmentThree.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_fragmentOne_to_fragmentThree)
+            Navigation.findNavController(view).navigate(R.id.action_fragment_one_to_fragment_three)
         }
 
 
         binding.buttonToFragmentFour.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.action_fragmentOne_to_fragmentFour)
+            Navigation.findNavController(view).navigate(R.id.action_fragment_one_to_fragment_four)
         }
 
     }

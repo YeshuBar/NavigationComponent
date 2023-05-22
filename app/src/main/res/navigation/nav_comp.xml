@@ -11,12 +11,12 @@
         android:label="fragment_one"
         tools:layout="@layout/fragment_one" >
         <action
-            android:id="@+id/action_fragmentOne_to_fragmentThree"
+            android:id="@+id/action_fragment_one_to_fragment_three"
             app:destination="@id/fragmentThree"
             app:enterAnim="@android:anim/fade_in"
             app:exitAnim="@android:anim/fade_out"/>
         <action
-            android:id="@+id/action_fragmentOne_to_fragmentFour"
+            android:id="@+id/action_fragment_one_to_fragment_four"
             app:destination="@id/fragmentFour"
             app:enterAnim="@android:anim/fade_in"
             app:exitAnim="@android:anim/fade_out"/>
@@ -27,12 +27,12 @@
         android:label="fragment_two"
         tools:layout="@layout/fragment_two" >
         <action
-            android:id="@+id/action_fragmentTwo_to_fragmentOne"
+            android:id="@+id/action_fragment_two_to_fragment_one"
             app:destination="@id/fragmentOne"
             app:enterAnim="@android:anim/fade_in"
             app:exitAnim="@android:anim/fade_out" />
         <action
-            android:id="@+id/action_fragmentTwo_to_fragmentFour"
+            android:id="@+id/action_fragment_two_to_fragment_four"
             app:destination="@id/fragmentFour"
             app:enterAnim="@android:anim/fade_in"
             app:exitAnim="@android:anim/fade_out" />
@@ -43,12 +43,12 @@
         android:label="fragment_three"
         tools:layout="@layout/fragment_three" >
         <action
-            android:id="@+id/action_fragmentThree_to_fragmentOne"
+            android:id="@+id/action_fragment_three_to_fragment_one"
             app:destination="@id/fragmentOne"
             app:enterAnim="@android:anim/fade_in"
             app:exitAnim="@android:anim/fade_out" />
         <action
-            android:id="@+id/action_fragmentThree_to_fragmentTwo"
+            android:id="@+id/action_fragment_three_to_fragment_two"
             app:destination="@id/fragmentTwo"
             app:enterAnim="@android:anim/fade_in"
             app:exitAnim="@android:anim/fade_out" />
@@ -59,7 +59,7 @@
         android:label="fragment_four"
         tools:layout="@layout/fragment_four" >
         <action
-            android:id="@+id/action_fragmentFour_to_fragmentOne"
+            android:id="@+id/action_fragment_four_to_fragment_one"
             app:destination="@id/fragmentOne"
             app:enterAnim="@android:anim/fade_in"
             app:exitAnim="@android:anim/fade_out" />
