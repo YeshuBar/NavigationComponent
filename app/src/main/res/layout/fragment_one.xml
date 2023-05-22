@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentOne"
+    android:background="@color/blue">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/frag_margin_top"
+        android:layout_marginBottom="@dimen/frag_margin_bottom"
+        android:layout_marginEnd="@dimen/frag_margin_end"
+        android:layout_marginStart="@dimen/frag_margin_start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:fontFamily="@font/morga"
+        android:textSize="@dimen/text_size"
+        android:text="@string/text1" />
+
+    <Button
+        android:id="@+id/buttonToFragmentThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment3"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/textView1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonToFragmentFour"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:fontFamily="@font/morga"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/orange"/>
+
+    <Button
+        android:id="@+id/buttonToFragmentFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fragment4"
+        android:textAllCaps="false"
+        android:fontFamily="@font/morga"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/buttonToFragmentThree"
+        app:layout_constraintStart_toEndOf="@id/buttonToFragmentThree"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="@color/pink"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

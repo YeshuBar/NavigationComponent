@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="frag_margin_top">357dp</dimen>
+    <dimen name="frag_margin_bottom">355dp</dimen>
+    <dimen name="frag_margin_start">172dp</dimen>
+    <dimen name="frag_margin_end">180dp</dimen>
+    <dimen name="text_size">100sp</dimen>
+    <dimen name="main_margin">1dp</dimen>
+
+
+
+</resources>
